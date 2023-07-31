@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 3001
+const picocolors = require('picocolors');
 
 
 app.get('/', (req, res) => {
@@ -8,6 +9,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
- console.log(`listening on port ${PORT}`);
+ console.log(picocolors.blue(`✔ Server running on port ${PORT}`));
 });
 
